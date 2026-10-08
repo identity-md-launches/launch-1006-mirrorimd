@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "MirrorIMD",
+    "name": "MirrorIMD",
+    "symbol": "MIRROR",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {"poolBps":8800,"initialMarketCapWei":"2500000000000000000000","remainderTo":"0x249b317bd3f437c3f6834909dc167fc6aa73dd66"},
+  "notes": "Project website: https://mirrorimd.com/. The accepted src/MirrorIMD.sol:MirrorIMD contract is a fixed-supply ERC-20 with a no-argument constructor that mints 1,000,000,000 MIRROR with 18 decimals once to msg.sender, the factory during launch. There are no application contracts or initialization calls. The token has no owner, transfer tax, runtime minting, or privileged balance controls. Pool fee is 3000 (0.3%) with tick spacing 60. initialPrice is provenance only: floor(sqrt(initialMarketCapWei / totalSupply) * 2^96), expressed as paired-currency minor units per MIRROR minor unit with MIRROR as currency0. The deployer derives the actual opening sqrtPriceX96 from the supplied economics and totalSupply using the deployed currencies' address order."
+}
